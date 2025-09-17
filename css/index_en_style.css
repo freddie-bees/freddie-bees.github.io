@@ -1,0 +1,52 @@
+body {
+    background-color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+ 
+}
+
+.language_options {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    color:#BC1515;
+}
+
+.contact_button {
+background-color: #BC1515;
+color:beige;
+padding-left: 1%;
+padding-right: 1%;
+padding-bottom: 1%;
+padding-top: 1%;
+border-radius: 5px;
+}
+
+.biography {
+background-color: #BC1515;
+color: beige;
+font-size:xx-large;
+display:flex;
+flex-flow: row nowrap;
+justify-content: space-evenly;
+align-items: space-evenly;
+padding-top: 3%;
+padding-bottom: 3%;
+padding-left: 10%;
+padding-right: 10%;
+}
+
+.cv_photo {
+width: 35%;
+padding-right: 5%;   
+}
+
