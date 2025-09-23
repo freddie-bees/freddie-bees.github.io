@@ -57,3 +57,20 @@ border-radius: 5px;
     width: 175px;
     height: auto;
 }
+
+/*Mobile Adjustments*/
+@media only screen and (max-width: 650px) {
+    .navigation {
+        flex-direction: column;  /* column instead of row */
+        align-items: center;  /* center the children vertically */
+        padding-bottom: 10%;
+    }
+
+    .header {
+        font-size: 200%;
+    }
+
+    .link_image {
+        width:100px;
+    }
+}

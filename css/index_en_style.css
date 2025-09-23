@@ -6,7 +6,7 @@ body {
 /*Navigation Bar Style*/
 .navigation {
     font-size: large;
-     display: flex;
+    display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
@@ -17,128 +17,157 @@ body {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    color:#990E21;
+    color: #990E21;
 }
 
 .contact_button {
-background-color: #990E21;
-color:beige;
-padding-left: 1%;
-padding-right: 1%;
-padding-bottom: 1%;
-padding-top: 1%;
-border-radius: 5px;
+    background-color: #990E21;
+    color: beige;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 5px;
 }
 
 /*Biography Style*/
 .biography {
-background-color: #990E21;
-color: beige;
-font-size:275%;
-display:flex;
-flex-flow: row nowrap;
-justify-content: space-evenly;
-align-items: space-evenly;
-padding-top: 8%;
-padding-bottom: 8%;
-padding-left: 10%;
-padding-right: 10%;
+    background-color: #990E21;
+    color: beige;
+    font-size: 275%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .cv_photo {
-max-width: 25%;
-height: auto;
-padding-right: 5%;   
+    max-width: 25%;
+    height: auto;
+    padding-right: 5%;
+    min-width: 220px;
 }
 
 /*Relevant Classes Section Style*/
 .rc_section_heading {
-display:flex;
-flex-flow: column nowrap;
-justify-self: flex-start;
-padding-right: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: flex-start;
+    padding-right: 20%;
 }
 
 .relevant_classes {
-background-color: beige;
-color:#990E21;
-display:flex;
-flex-flow: row nowrap;
-align-items: space-evenly;
-padding-top: 5%;
-padding-bottom: 5%;
-padding-left: 3%;
-padding-right: 3%;
+    background-color: beige;
+    color: #990E21;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
 
 }
 
 .rc_section_body {
-display:flex;
-flex-flow: column nowrap;
-align-items: space-evenly;  
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .class_lists {
     border-style: solid;
     border-color: #990E21;
     padding-left: 8%;
+    padding-right: 8%;
 }
 
 /*Projects Section Style*/
 .projects_heading {
-display:flex;
-flex-flow: column nowrap;
-justify-self: flex-start;
-padding-right: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: flex-start;
+    padding-right: 20%;
 }
 
 .projects {
-background-color: #990E21;
-color:beige;
-display:flex;
-flex-flow: row nowrap;
-justify-content: space-evenly;
-align-items: space-evenly;
-padding-top: 5%;
-padding-bottom: 5%;
-padding-left: 3%;
-padding-right: 3%;
-font-size: 125%;
+    background-color: #990E21;
+    color: beige;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 125%;
 }
 
 /*Hobbies Section Style*/
 .hobbies_heading {
-display:flex;
-flex-flow: column nowrap;
-justify-self: flex-start;
-padding-right: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: flex-start;
+    padding-right: 20%;
 }
 
 .hobbies {
-background-color: beige;
-color:#990E21;
-display:flex;
-flex-flow: row nowrap;
-justify-content: space-evenly;
-align-items: space-evenly;
-padding-top: 5%;
-padding-bottom: 5%;
-padding-left: 3%;
-padding-right: 3%;
-font-size: 125%;
+    background-color: beige;
+    color: #990E21;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 125%;
 }
 
 .hobbies_text {
-flex-flow: column wrap;
-padding-right: 3%;
+    flex-flow: column wrap;
+    padding-right: 3%;
 }
 
 .cats_photo {
-max-width: 25%;
-height: auto;
+    max-width: 25%;
+    height: auto;
+    min-width: 220px;
 }
 
 /*Mobile Adjustments*/
 @media only screen and (max-width: 650px) {
-  *  {flex-flow: column wrap;}
+
+    .navigation,
+    .biography,
+    .relevant_classes,
+    .projects,
+    .hobbies {
+        flex-direction: column;  /* column instead of row */
+        align-items: center;  /* center the children vertically */
+    }
+
+    .class_lists {
+        padding-left: 1%;
+    }
+
+    .cv_photo,
+    .cats_photo {
+        max-width: 80%;
+        padding-right: 0;
+    }
+
+    .biography {
+        font-size: 125%;
+    }
+    .hobbies,
+    .projects {
+        font-size: 100%;
+    }
 }
