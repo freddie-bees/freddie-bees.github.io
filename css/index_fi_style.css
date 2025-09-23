@@ -34,7 +34,7 @@ border-radius: 5px;
 .biography {
 background-color: #990E21;
 color: beige;
-font-size:250%;
+font-size:275%;
 display:flex;
 flex-flow: row nowrap;
 justify-content: space-evenly;
@@ -71,10 +71,16 @@ padding-left: 3%;
 padding-right: 3%;
 }
 
-.class_lists {
+.rc_section_body {
 display:flex;
 flex-flow: column nowrap;
 align-items: space-evenly;  
+}
+
+.class_lists {
+    border-style: solid;
+    border-color: #990E21;
+    padding-left: 8%;
 }
 
 /*Projects Section Style*/

@@ -72,10 +72,16 @@ padding-right: 3%;
 
 }
 
-.class_lists {
+.rc_section_body {
 display:flex;
 flex-flow: column nowrap;
 align-items: space-evenly;  
+}
+
+.class_lists {
+    border-style: solid;
+    border-color: #990E21;
+    padding-left: 8%;
 }
 
 /*Projects Section Style*/
@@ -134,5 +140,5 @@ height: auto;
 
 /*Mobile Adjustments*/
 @media only screen and (max-width: 650px) {
-  *  {flex-direction: column;}
+  *  {flex-flow: column wrap;}
 }
