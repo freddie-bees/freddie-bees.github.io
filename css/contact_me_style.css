@@ -7,10 +7,10 @@ body {
 nav {
     font-size: large;
      display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1%;
+    padding-bottom: 10%;
 }
 
 .language_options {
@@ -49,28 +49,27 @@ section {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    font-size: 500%;
+    font-size: 200%;
 }
 
 /*Image Style*/
 .link_image {
-    width: 175px;
+    width: 125px;
     height: auto;
 }
 
-/*Mobile Adjustments*/
-@media only screen and (max-width: 650px) {
+/*Desktop Adjustments*/
+@media only screen and (min-width: 651px) {
     nav {
-        flex-direction: column;  /* column instead of row */
-        align-items: center;  /* center the children vertically */
-        padding-bottom: 10%;
+        flex-direction: row;  /* Row instead of column */
+        padding-bottom: 3%;
     }
 
     .header {
-        font-size: 200%;
+        font-size: 500%;
     }
 
     .link_image {
-        width:100px;
+        width:200px;
     }
 }
