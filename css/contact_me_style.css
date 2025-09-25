@@ -1,10 +1,10 @@
 body {
-    background-color: beige;
+    background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*Navigation Bar Style*/
-.navigation {
+nav {
     font-size: large;
      display: flex;
     flex-flow: row wrap;
@@ -23,7 +23,7 @@ body {
 
 .home_button {
 background-color: #990E21;
-color:beige;
+color:white;
 padding-left: 1%;
 padding-right: 1%;
 padding-bottom: 1%;
@@ -32,9 +32,9 @@ border-radius: 5px;
 }
 
 /*Main Section Style*/
-.main_section {
+section {
     background-color: #990E21;
-    color:beige;
+    color:white;
     padding-bottom: 5%;
     padding-top: 5%;
 }
@@ -60,7 +60,7 @@ border-radius: 5px;
 
 /*Mobile Adjustments*/
 @media only screen and (max-width: 650px) {
-    .navigation {
+    nav {
         flex-direction: column;  /* column instead of row */
         align-items: center;  /* center the children vertically */
         padding-bottom: 10%;

@@ -1,87 +1,91 @@
 <!DOCTYPE html>
 <html lang="fi">
-    <head>
-        <link rel="stylesheet" href="css/index_fi_style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <title>Rebecca Päärent</title>
-    </head>
-    <body>
 
-        <!--Navigation Bar-->
-        <div class="navigation">
+<head>
+    <link rel="stylesheet" href="css/index_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Rebecca Päärent</title>
+</head>
 
-            <div class="language_options">
-            <a href="index.html" class="english_button">In English</a>
+<body>
+
+    <!--Navigation Bar-->
+    <nav>
+
+        <div class="language_options">
+            <a href="index.html" class="english_button">In English</a> <!--Switches language to English-->
             <p> | </p>
-            <p class="finnish_button">Suomeksi</p>
-            </div>
-            
-           <a href="contact_me_fi.html" class ="contact_button">Ota Yhteyttä</a>
-
+            <p class="finnish_button">Suomeksi</p> <!--Non-functional because the page is already in Finnish-->
         </div>
 
-        <br>
-        <br>
+        <a href="contact_me_fi.html" class="contact_button">Ota Yhteyttä</a> <!--Link to contact page-->
 
-        <!--Biography-->
-        <div class="biography">
+    </nav>
 
-            <img src="images/cv_photo.jpg" alt="cv kuva" class="cv_photo">
-            <p>Rebecca Päärent on pyrkivä ohjelmistokehittäjä opiskelemassa
-                Haaga-Helia AMK:ssa.</p>
-            
-        </div>
+    <br>
+    <br>
 
-        <!-- Relevant Classes-->
-         <div class="relevant_classes">
-         <h1 class="rc_section_heading">Liittyvät Kurssit</h1>
+    <!--Biography-->
+    <section class="biography">
+
+        <img src="images/cv_photo.jpg" alt="cv kuva" class="cv_photo">
+        <p>Rebecca Päärent on pyrkivä ohjelmistokehittäjä opiskelemassa
+            Haaga-Helia AMK:ssa.</p> <!--Primary information for the portfolio-->
+
+    </section>
+
+    <!-- Relevant Classes-->
+    <section class="relevant_classes">
+        <h1 class="rc_section_heading">Liittyvät Kurssit</h1>
         <div class="rc_section_body">
-        <h3>Vaikka ohjelmistojen kehittäminen on minun pääfokusointini, olen myös kiinnostunut data-analytiikasta, 
-            ja opiskelin sitä sivuaineena.
-        </h3>
-        <div class="class_lists">
-        <h2>Ohjelmistojen Kehittäminen</h2>
-         <ul>
-           <li><a href="https://opinto-opas.haaga-helia.fi/course/SOF001IT1AE?lang=en">
-                Introduction to Software Development</a></li>
-            <!--<li></li>
+            <h3>Vaikka ohjelmistojen kehittäminen on minun pääfokusointini, olen myös kiinnostunut data-analytiikasta,
+                ja opiskelin sitä sivuaineena.
+            </h3>
+            <div class="class_lists">
+                <!--This is meant to be updated over time. Classes should be links to official course descriptions.-->
+                <h2>Ohjelmistojen Kehittäminen</h2>
+                <ul>
+                    <li><a href="https://opinto-opas.haaga-helia.fi/course/SOF001IT1AE?lang=en">
+                            Introduction to Software Development</a></li>
+                    <!--<li></li>
             <li></li>-->
-         </ul>
-         <h2>Data-analytiikka</h2>
-         <ul>
-            <li><a href="https://opinto-opas.haaga-helia.fi/course/ANA001AS2AE?lang=en">
-                Data Analytics with Python</a></li>
-            <li><a href="https://opinto-opas.haaga-helia.fi/course/ICB018AS2AE?lang=en">
-                Applied Data Modelling</a></li>
-            <!--<li></li>-->
-         </ul>
-         </div>
-         </div>
-         </div>
-
-        <!--Projects-->
-        <div class="projects">
-        <h1 class="projects_heading">Projektit</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </ul>
+                <h2>Data-analytiikka</h2>
+                <ul>
+                    <li><a href="https://opinto-opas.haaga-helia.fi/course/ANA001AS2AE?lang=en">
+                            Data Analytics with Python</a></li>
+                    <li><a href="https://opinto-opas.haaga-helia.fi/course/ICB018AS2AE?lang=en">
+                            Applied Data Modelling</a></li>
+                    <!--<li></li>-->
+                </ul>
+            </div>
         </div>
+    </section>
 
-        <!--Hobbies-->
-        <div class="hobbies">
+    <!--Projects-->
+    <section class="projects">
+        <h1 class="projects_heading">Projektit</h1>
+        <!--To be updated as studies continue with details about completed and ongoing projects-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+
+    <!--Hobbies-->
+    <section class="hobbies">
         <h1 class="hobbies_heading">Harrastukset</h1>
         <div class="hobbies_text">
-        <p> Olen rakastanut tieteiskirjallisuutta ja kauhua minun koko elämäni, 
-            ja kun en katso elokuvia, lue kirjoja, tai pelaa videopelejä, yleensä kirjoitan omia tarinoitani.</p>
-        <br>
-        <br>
-        <p>Lisäksi, vietän paljon aikaa ihanien kissojeni kanssa!</p>
-        <br>
+            <p> Olen rakastanut tieteiskirjallisuutta ja kauhua minun koko elämäni,
+                ja kun en katso elokuvia, lue kirjoja, tai pelaa videopelejä, yleensä kirjoitan omia tarinoitani.</p>
+            <br>
+            <br>
+            <p>Lisäksi, vietän paljon aikaa ihanien kissojeni kanssa!</p>
+            <br>
         </div>
-        <img src="images/cats.jpg" class="cats_photo" 
-        alt="kaksi kissaa makaamassa vierekkäin kantokassilla">
-        </div>
+        <img src="images/cats.jpg" class="cats_photo" alt="kaksi kissaa makaamassa vierekkäin kantokassilla">
+    </section>
 
-    </body>
+</body>
+
 </html>
